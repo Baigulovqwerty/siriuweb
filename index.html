@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Столовая</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+		<span class="headertext">Столовая</span>
+	</div>
+	<div class="now">
+		<div class="nowtext">Сейчас</div>
+		<div class="nowbody">
+			<div class="nowt now1">В очереди</div>
+			<div class="nowt now2"><span class="inq" id="peoplecount">30</span> чел</div>
+			<div class="nowt now3">Время ожидания</div>
+			<div class="nowt now4"><span class="inq">45</span> мин</div>
+			<div class="nowt now5">Свободных мест</div>
+			<div class="nowt now6"><span class="inq">20</span> мест</div>
+		</div>
+	</div>
+	<div class="graph">
+		<div class="graphtext">Среднее время ожидания в <span class="dauinweek">среду</span>
+		</div>
+		<div class="graphbody"><canvas id="myChart" style="max-height: 350px; width: 100%;"></canvas></div>
+	</div>
+	<div class="footer">
+		<div class="footerbody">
+			<div class="footernumber"><div class="footer1">телефон поддержки</div><div class="footer2">8999 999 99 99</div></div>
+			<div class="footernumber"><div class="footer1">телефон поддержки</div><div class="footer2">8999 999 99 99</div></div>
+		</div>
+		<div class="footerlogo">
+			<img src="i 1.jpg" alt="logo" class="footerimg">
+		</div>
+	</div>
+
+
+
+
+	<script type="module">
+
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+
+		const firebaseConfig = {
+			apiKey: "AIzaSyA7O1oX_iH9QIZXFU9IRn9iO57g-f_n0uM",
+			authDomain: "sirius-6b2b4.firebaseapp.com",
+			databaseURL: "https://sirius-6b2b4-default-rtdb.europe-west1.firebasedatabase.app",
+			projectId: "sirius-6b2b4",
+			storageBucket: "sirius-6b2b4.appspot.com",
+			messagingSenderId: "376848856283",
+			appId: "1:376848856283:web:6f68500f23727b3ac2c8fe",
+		measurementId: "G-FRYKTTYWRC"
+		};
+
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+		import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-database.js";
+
+
+		const db = getDatabase();
+		const countofpeople = ref(db, 'countofpeople/' + '');
+		onValue(countofpeople, (snapshot) => {
+		const data = snapshot.val();
+		const countofpeopleelem = document.getElementById('peoplecount').innerHTML = data;
+		});
+
+
+
+		
+		const ctx = document.getElementById('myChart');
+
+		new Chart(ctx, {
+			type: 'bar',
+			label: "fds",
+			data: {
+				labels: ['18:00', '18:00', '18:00', '18:00', '18:00', '18:00', '18:00', '18:00', '18:00', '18:00'],
+				datasets: [{
+					data: [40, 20, 10, 5, 5, 15, 20, 40, 45, 30]
+				}]
+			},
+			options: {
+				plugins: {
+					legend: {
+						display: false,
+					}
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>
