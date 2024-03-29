@@ -21,9 +21,9 @@
 			<div class="nowt now1">В очереди</div>
 			<div class="nowt now2"><span class="inq" id="peoplecount">30</span> чел</div>
 			<div class="nowt now3">Время ожидания</div>
-			<div class="nowt now4"><span class="inq">45</span> мин</div>
+			<div class="nowt now4"><span class="inq" id="waitingtime">45</span> мин</div>
 			<div class="nowt now5">Свободных мест</div>
-			<div class="nowt now6"><span class="inq">20</span> мест</div>
+			<div class="nowt now6"><span class="inq" id="peoplecount">20</span> мест</div>
 		</div>
 	</div>
 	<div class="graph">
@@ -70,7 +70,19 @@
 		const countofpeople = ref(db, 'countofpeople/' + '');
 		onValue(countofpeople, (snapshot) => {
 		const data = snapshot.val();
-		const countofpeopleelem = document.getElementById('peoplecount').innerHTML = data;
+		document.getElementById('peoplecount').innerHTML = data;
+		});
+
+		const waitingtime = ref(db, 'waitingtime/' + '');
+		onValue(waitingtime, (snapshot) => {
+		const data = snapshot.val();
+		document.getElementById('waitingtime').innerHTML = data;
+		});
+
+		const availableseats = ref(db, 'availableseats/' + '');
+		onValue(availableseats, (snapshot) => {
+		const data = snapshot.val();
+		document.getElementById('availableseats').innerHTML = data;
 		});
 
 
