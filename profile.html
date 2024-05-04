@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Столовая</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/profile.css">
+	<link rel="stylesheet" href="style/login.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script type="module" src="script/db.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+		<span class="headertext">Рестроран Вега</span>
+		<a class="bac_link" href="/bac.html"><img src="bac.png" alt="корзина" class="bac"></a>
+	</div>
+	<div class="not-signed not-signed_first">
+		<a href="/login.html" class="login_btn">Войти</a>
+	</div>
+	<div class="not-signed">
+		<a href="/signup.html" class="login_btn">Зарегистрироваться</a>
+	</div>
+	<div class="signed">
+		<div class="name">Илья</div>
+		<div class="main">
+			<!-- <div class="set">Мои заказы</div>
+			<div class="set">Тема</div>
+			<div class="set">Справка</div> -->
+			<div id="signout" class="set">Выйти</div>
+		</div>
+	</div>
+	<div class="empty"></div>
+	<div class="footer">
+		<a href="menu.html" class="menu"><img src="menu_logo.png" alt="" class="menu_logo"></a>
+		<a href="index.html" class="home"><img src="home_logo.png" alt="" class="menu_logo"></a>
+		<a href="profile.html" class="profile"><img src="profile_logo.png" alt="" class="menu_logo"></a>
+	</div>
+	<script type="module" src="script/profile.js"></script>
+</body>
+
+</html>

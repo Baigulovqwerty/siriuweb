@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Столовая</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/login.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script type="module" src="script/db.js"></script>
+	<script type="module" src="script/login.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+		<span class="headertext">Рестроран Вега</span>
+	</div>
+
+	<div class="alert" id="alertDiv" role="alert">
+		<span aria-hidden="true">Ошибка</span>
+	</div>
+
+	<div class="login">
+		<div class="login_text">Введите вашу почту</div>
+		<div class="input_email">
+			<input id="mail_input" type="email" placeholder="mail@gmail.com" class="login_input">
+			<input id="pass_input" type="password" class="login_input">
+			<button id="input_btn" class="input_btn">Войти</button>
+		</div>
+	</div>
+	<div class="empty"></div>
+	<div class="footer">
+		<a href="menu.html" class="menu"><img src="menu_logo.png" alt="" class="menu_logo"></a>
+		<a href="" class="home"><img src="home_logo.png" alt="" class="menu_logo"></a>
+		<a href="profile.html" class="profile"><img src="profile_logo.png" alt="" class="menu_logo"></a>
+	</div>
+</body>
+
+</html>

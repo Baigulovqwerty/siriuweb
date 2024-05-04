@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Столовая</title>
+	<link rel="stylesheet" href="style/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script type="module" src="script/db.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+		<span class="headertext">Рестроран Вега</span>
+		<a class="bac_link" href="bac.html"><img src="bac.png" alt="корзина" class="bac"></a>
+	</div>
+	<div class="now">
+		<div class="nowtext">Сейчас</div>
+		<div class="nowbody">
+			<div class="nowt now1">В очереди</div>
+			<div class="nowt now2"><span class="inq" id="peoplecount">30</span> чел</div>
+			<div class="nowt now3">Время ожидания</div>
+			<div class="nowt now4"><span class="inq" id="waitingtime">45</span> мин</div>
+			<div class="nowt now5">Свободных мест</div>
+			<div class="nowt now6"><span class="inq" id="availableseats">20</span> мест</div>
+		</div>
+	</div>
+	<div class="graph">
+		<div class="graphtext">Среднее время ожидания в <span class="dauinweek">среду</span>
+		</div>
+		<div class="graphbody"><canvas id="myChart" style="max-height: 350px; width: 100%;"></canvas></div>
+	</div>
+	<div class="empty"></div>
+	<div class="footer">
+		<a href="menu.html" class="menu"><img src="menu_logo.png" alt="" class="menu_logo"></a>
+		<a href="" class="home"><img src="home_logo.png" alt="" class="menu_logo"></a>
+		<a href="profile.html" class="profile"><img src="profile_logo.png" alt="" class="menu_logo"></a>
+	</div>
+	<script type="module" src="script/index.js"></script>
+</body>
+
+</html>

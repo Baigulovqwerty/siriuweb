@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Столовая</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/menu.css">
+	<link rel="stylesheet" href="style/bac.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script type="module" src="script/db.js"></script>
+	<script type="module" src="script/bac.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <span class="headertext">Рестроран Вега</span>
+	</div>
+	
+	<div class="alert" id="alertDiv" role="alert">
+		<span aria-hidden="true">Ваш заказ успешно оформлен</span>
+	</div>
+
+	<div class="pp">
+		<div class="label bac_label">
+			<div class="label_text">Корзина</div>
+            <div class="label_text">700 р</div>
+        </div>
+        
+		<div class="menu_body">
+			<div class="item"><div class="item_t"><span class="item_text">Салат зимний</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input  class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					100 р
+				</div></div>
+		</div>
+	</div>
+
+    <button class="label order_btn">
+        Заказать
+    </button>
+
+	<div class="empty"></div>
+	<div class="footer">
+        <a href="menu.html" class="menu"><img src="menu_logo.png" alt="" class="menu_logo"></a>
+		<a href="" class="home"><img src="home_logo.png" alt="" class="menu_logo"></a>
+		<a href="profile.html" class="profile"><img src="profile_logo.png" alt="" class="menu_logo"></a>
+	</div>
+</body>
+
+</html>
