@@ -1,0 +1,42 @@
+.login_btn {
+    margin: 15px 7vw 0 7vw;
+    color: white;
+    padding: 3vw;
+    border-radius: 10px;
+    background-color: #343434;
+    font-size: 24px;
+    padding: 3vw;
+    display: block;
+    text-decoration: none;
+}
+
+.login {
+    margin: 15px 7vw 0 7vw;
+    color: white;
+    padding: 3vw;
+    border-radius: 10px;
+    background-color: #343434;
+    font-size: 36px;
+    padding: 3vw;
+}
+
+.signed {
+    margin: 70px 7vw 0 7vw;
+    color: white;
+    padding: 3vw;
+    border-radius: 10px;
+    background-color: #343434;
+}
+.name {
+    margin-bottom: 20px;
+	font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.set {
+    margin-bottom: 10px;
+}
+
+.not-signed_first {
+    margin-top: 55px;
+}

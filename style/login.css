@@ -1,0 +1,29 @@
+
+.login {
+    margin: 70px 7vw 0 7vw;
+    color: white;
+    padding: 3vw;
+    border-radius: 10px;
+    background-color: #343434;
+    font-size: 36px;
+    padding: 3vw;
+}
+
+.login_text {
+    font-size: 24px;
+}
+.login_input {
+   width: 100%;
+   padding: 0;
+   border: none;
+   border-radius: 3px;
+   min-height: 25px;
+}
+.input_btn {
+    background-color: #343434;
+    color: white;
+    border: solid 2px white;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+}

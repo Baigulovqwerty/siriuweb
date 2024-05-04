@@ -1,0 +1,11 @@
+.order_btn {
+    font-size: 20px;
+}
+
+.bac_label {
+    display: flex;
+    justify-content: space-between
+}
+.pp {
+    margin-top: 55px;
+}
