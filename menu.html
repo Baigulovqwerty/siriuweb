@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Столовая</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/menu.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script type="module" src="script/db.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+		<span class="headertext">Рестроран Вега</span>
+		<a class="bac_link" href="bac.html"><img src="bac.png" alt="корзина" class="bac"></a>
+	</div>
+
+	<div id="breakfast" class="breakfast pp">
+		<a href="#breakfast" class="label">
+			Завтрак
+		</a>
+		<div class="menu_body">
+			<div class="item"><div class="item_t"><span class="item_text">Блины</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					40 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Мюсли с йогуртом и джемом</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					75 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Каша рисовая молочная</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					50 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Омлет</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					90 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Морс из клюквы</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					40 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Какао с молоком</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					40 р
+				</div></div>
+		</div>
+	</div>
+	<div id="lanch" class="lanch pp">
+		<a href="#lanch" class="label">
+			Обед
+		</a>
+		<div class="menu_body">
+			<div class="item"><div class="item_t"><span class="item_text">Салат Весна</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					60 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Солянка домашняя</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					90 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Плов из свинины</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					140 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Котлеты куринные с овощами</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					120 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Макаронные изделия отварные</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					40 р
+				</div></div>
+		</div>
+	</div>
+	<div id="dinner" class="lanch pp">
+		<a href="#dinner" class="label">
+			Ужин
+		</a>
+		<div class="menu_body">
+			<div class="item"><div class="item_t"><span class="item_text">Зеленый горошек</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					30 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Салат Восток</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					60 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Котлеты домашние</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					120 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Минтай в кляре</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					120 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Макароны отварные с брокколи</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					45 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Катофель замеченный</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					50 р
+				</div></div>
+			<div class="item"><div class="item_t"><span class="item_text">Соуса в ассортименте</span>
+					<div class="count">
+						<button class="minus">−</button>
+						<input class="input_count" type="number" value="0" />
+						<button class="plus">+</button>
+					</div>
+				</div>
+				<div class="price">
+					0 р
+				</div></div>
+		</div>
+	</div>
+	
+  
+	<div class="empty"></div>
+	<div class="footer">
+    <a href="menu.html" class="menu"><img src="menu_logo.png" alt="" class="menu_logo"></a>
+		<a href="" class="home"><img src="home_logo.png" alt="" class="menu_logo"></a>
+		<a href="profile.html" class="profile"><img src="profile_logo.png" alt="" class="menu_logo"></a>
+	</div>
+  <script type="module" src="script/menu.js"></script>
+</body>
+
+</html>
