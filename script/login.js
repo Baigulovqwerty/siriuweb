@@ -22,7 +22,7 @@ function log_in () {
 		localStorage.setItem("mail", user.email);
 		localStorage.setItem("basket", JSON.stringify({}));
 		localStorage.setItem("bscost", 0);
-		window.location.href = '/profile.html';
+		window.location.href = 'profile.html';
 	})
 	.catch((error) => {
 		const errorCode = error.code;
